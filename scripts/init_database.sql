@@ -14,8 +14,8 @@ WARNING:
 */
 
 USE master;
-
 GO
+
 -- Drop and recreate the 'DataWarehouse' database
 IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouse')
 BEGIN
@@ -23,6 +23,7 @@ BEGIN
     DROP DATABASE DataWarehouse;
 END;
 GO
+
 -- Create the 'DataWarehouse' database
 CREATE DATABASE DataWarehouse;
 GO
